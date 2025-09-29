@@ -5,11 +5,11 @@
   "installCommand": "npm install",
   "framework": "nextjs",
   "env": {
-    "NEXT_PUBLIC_API_URL": "@next_public_api_url"
+    "NEXT_PUBLIC_API_URL": "https://sih-2-2025.onrender.com"
   },
   "build": {
     "env": {
-      "NEXT_PUBLIC_API_URL": "@next_public_api_url"
+      "NEXT_PUBLIC_API_URL": "https://sih-2-2025.onrender.com"
     }
   },
   "functions": {

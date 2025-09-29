@@ -103,7 +103,7 @@ function SidebarContent({ user, onNavigate, isCollapsed = false, onToggleCollaps
         isCollapsed && !isMobile ? "px-2" : "px-6"
       )}>
         <Link
-          href="/"
+          href="/?home=true"
           className={cn(
             "flex items-center gap-3 font-bold text-slate-800 dark:text-slate-200",
             "hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200",

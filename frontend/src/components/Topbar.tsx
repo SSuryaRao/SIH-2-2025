@@ -11,7 +11,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { LogOut, Settings, User } from 'lucide-react';
+import { LogOut, Settings, User, Home } from 'lucide-react';
 import { User as UserType } from '@/services/api';
 
 interface TopbarProps {
@@ -39,6 +39,10 @@ export default function Topbar({ user, onLogout }: TopbarProps) {
   const handleSettingsClick = () => {
     // For now, just show a toast. You can implement settings page later
     console.log('Settings clicked - functionality coming soon');
+  };
+
+  const handleHomeClick = () => {
+    router.push('/?home=true');
   };
 
   return (
@@ -86,6 +90,13 @@ export default function Topbar({ user, onLogout }: TopbarProps) {
               </div>
             </DropdownMenuLabel>
             <DropdownMenuSeparator className="my-2" />
+            <DropdownMenuItem
+              className="cursor-pointer rounded-lg py-2.5 focus:bg-blue-50 dark:focus:bg-blue-950/50"
+              onClick={handleHomeClick}
+            >
+              <Home className="mr-3 h-4 w-4" />
+              <span className="font-medium">Home</span>
+            </DropdownMenuItem>
             <DropdownMenuItem
               className="cursor-pointer rounded-lg py-2.5 focus:bg-blue-50 dark:focus:bg-blue-950/50"
               onClick={handleProfileClick}

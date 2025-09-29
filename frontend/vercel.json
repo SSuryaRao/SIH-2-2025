@@ -11,10 +11,5 @@
     "env": {
       "NEXT_PUBLIC_API_URL": "https://sih-2-2025.onrender.com"
     }
-  },
-  "functions": {
-    "app/api/**": {
-      "runtime": "nodejs18.x"
-    }
   }
 }

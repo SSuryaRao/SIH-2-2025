@@ -222,14 +222,14 @@ function HomePage() {
 
             {/* Animated Hero Title */}
             <div className="mb-8">
-              <h1 className="text-6xl md:text-7xl lg:text-9xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-gray-900 via-indigo-900 to-purple-900 bg-clip-text text-transparent block animate-gradient-x">
-                  Revolutionizing
-                </span>
-                <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 bg-clip-text text-transparent block mt-4 animate-gradient-y">
-                  Education Management
-                </span>
-              </h1>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight block">
+  <span className="bg-gradient-to-r from-gray-900 via-indigo-900 to-purple-900 bg-clip-text text-transparent animate-gradient-x">
+    Revolutionizing
+  </span>
+  <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 bg-clip-text text-transparent block mt-4 animate-gradient-y">
+    Education Management
+  </span>
+</h1>
 
               {/* Animated Typing Subtitle */}
               <div className="mt-6 h-12 flex items-center justify-center">

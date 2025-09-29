@@ -49,7 +49,7 @@ const roleNavItems: Record<string, NavItem[]> = {
   admin: [
     { title: 'Dashboard', href: '/dashboard/admin', icon: LayoutDashboard },
     { title: 'Profile', href: '/dashboard/admin/profile', icon: User },
-    { title: 'Users', href: '/dashboard/admin/users', icon: Users },
+    // { title: 'Users', href: '/dashboard/admin/users', icon: Users },
     { title: 'Students', href: '/dashboard/admin/students', icon: GraduationCap },
     { title: 'Fees', href: '/dashboard/admin/fees', icon: CreditCard },
     { title: 'Hostels', href: '/dashboard/admin/hostels', icon: Building2 },

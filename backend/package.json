@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
+    "build": "echo 'Build completed - Node.js app ready for deployment'",
     "test": "jest",
     "create-demo-users": "node scripts/createDemoUsers.js",
     "setup-demo": "node scripts/setupDemoData.js",

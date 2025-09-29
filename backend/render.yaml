@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: college-erp-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: HOST
+        value: 0.0.0.0
+      - key: FRONTEND_URL
+        fromService:
+          type: web
+          name: frontend
+          property: url
+    healthCheckPath: /api/health
+    autoDeploy: true
+    branch: main

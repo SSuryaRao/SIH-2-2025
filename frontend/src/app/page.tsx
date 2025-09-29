@@ -127,19 +127,77 @@ function HomePage() {
       <nav className="bg-white/60 backdrop-blur-xl border-b border-white/20 sticky top-0 z-50 shadow-lg shadow-black/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-18">
-            <div className="flex items-center space-x-3">
-              <div className="relative">
-                <GraduationCap className="h-9 w-9 text-indigo-600" />
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-gradient-to-r from-violet-400 to-purple-500 rounded-full animate-ping"></div>
+            <div className="flex items-center space-x-4 group cursor-pointer relative">
+              {/* Enhanced Logo Icon with Multiple Effects */}
+              <div className="relative transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-12">
+                {/* Main Icon Container with Glowing Background */}
+                <div className="relative p-3 bg-gradient-to-br from-indigo-600 via-purple-600 to-violet-600 rounded-2xl shadow-lg shadow-indigo-500/25 group-hover:shadow-xl group-hover:shadow-indigo-500/40 transition-all duration-500">
+                  {/* Animated Background Gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-gradient-xy"></div>
+
+                  {/* Icon with Inner Glow */}
+                  <GraduationCap className="h-8 w-8 text-white relative z-10 drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-300" />
+
+                  {/* Inner Shine Effect */}
+                  <div className="absolute inset-2 bg-gradient-to-br from-white/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+
+                {/* Multiple Floating Particles */}
+                <div className="absolute -top-2 -right-2 w-4 h-4 bg-gradient-to-r from-emerald-400 to-green-500 rounded-full animate-bounce opacity-80 group-hover:opacity-100 transition-opacity duration-300" style={{animationDelay: '0s', animationDuration: '2s'}}>
+                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-green-500 rounded-full animate-ping"></div>
+                </div>
+
+                <div className="absolute -top-1 -left-2 w-2 h-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full animate-pulse opacity-60 group-hover:opacity-100 transition-opacity duration-300" style={{animationDelay: '0.5s'}}></div>
+
+                <div className="absolute -bottom-2 -right-1 w-3 h-3 bg-gradient-to-r from-pink-400 to-rose-500 rounded-full animate-bounce opacity-70 group-hover:opacity-100 transition-opacity duration-300" style={{animationDelay: '1s', animationDuration: '1.5s'}}></div>
+
+                {/* Orbiting Rings */}
+                <div className="absolute inset-0 border-2 border-indigo-300/30 rounded-2xl animate-spin opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{animationDuration: '8s'}}></div>
+                <div className="absolute inset-1 border border-purple-300/40 rounded-xl animate-spin opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{animationDuration: '6s', animationDirection: 'reverse'}}></div>
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-gray-900 via-indigo-800 to-purple-800 bg-clip-text text-transparent">
-                EduFlow
-              </span>
+
+              {/* Enhanced Text Logo */}
+              <div className="relative overflow-hidden">
+                <span className="text-3xl font-bold bg-gradient-to-r from-gray-900 via-indigo-800 to-purple-800 bg-clip-text text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-600 group-hover:via-purple-600 group-hover:to-violet-600 transition-all duration-500 relative z-10">
+                  OneCampus
+                </span>
+
+                {/* Animated Underline */}
+                <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-500 group-hover:w-full transition-all duration-700 ease-out rounded-full"></div>
+
+                {/* Shimmer Effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -skew-x-12 opacity-0 group-hover:opacity-100 group-hover:translate-x-full transition-all duration-1000 ease-out"></div>
+
+                {/* Floating Letters Effect on Hover */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <span className="text-3xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-violet-400 bg-clip-text text-transparent animate-bounce" style={{animationDelay: '0s', animationDuration: '2s'}}>O</span>
+                  <span className="text-3xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-violet-400 bg-clip-text text-transparent animate-bounce" style={{animationDelay: '0.1s', animationDuration: '2s'}}>n</span>
+                  <span className="text-3xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-violet-400 bg-clip-text text-transparent animate-bounce" style={{animationDelay: '0.2s', animationDuration: '2s'}}>e</span>
+                  <span className="text-3xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-violet-400 bg-clip-text text-transparent animate-bounce" style={{animationDelay: '0.3s', animationDuration: '2s'}}>C</span>
+                  <span className="text-3xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-violet-400 bg-clip-text text-transparent animate-bounce" style={{animationDelay: '0.4s', animationDuration: '2s'}}>a</span>
+                  <span className="text-3xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-violet-400 bg-clip-text text-transparent animate-bounce" style={{animationDelay: '0.5s', animationDuration: '2s'}}>m</span>
+                  <span className="text-3xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-violet-400 bg-clip-text text-transparent animate-bounce" style={{animationDelay: '0.6s', animationDuration: '2s'}}>p</span>
+                  <span className="text-3xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-violet-400 bg-clip-text text-transparent animate-bounce" style={{animationDelay: '0.7s', animationDuration: '2s'}}>u</span>
+                  <span className="text-3xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-violet-400 bg-clip-text text-transparent animate-bounce" style={{animationDelay: '0.8s', animationDuration: '2s'}}>s</span>
+                </div>
+              </div>
+
+              {/* Background Glow Effect */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-violet-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
             </div>
             <div className="flex items-center space-x-4">
               <Link href="/login">
-                <Button variant="ghost" className="text-gray-700 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all duration-300 font-medium">
-                  Sign In
+                <Button
+                  variant="outline"
+                  className="group relative overflow-hidden border-2 border-indigo-200 hover:border-indigo-400 bg-white/80 backdrop-blur-sm text-indigo-700 hover:text-white font-semibold px-6 py-2.5 rounded-xl transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/25"
+                >
+                  <span className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></span>
+                  <span className="relative z-10 flex items-center">
+                    <svg className="w-4 h-4 mr-2 transition-transform group-hover:rotate-12" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Sign In
+                  </span>
                 </Button>
               </Link>
               <Link href="/register">
@@ -240,7 +298,7 @@ function HomePage() {
                       <GraduationCap className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-gray-800">EduFlow Dashboard</h3>
+                      <h3 className="text-lg font-bold text-gray-800">OneCampus Dashboard</h3>
                       <p className="text-sm text-gray-600">Administrator Portal</p>
                     </div>
                   </div>
@@ -571,7 +629,7 @@ function HomePage() {
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Join thousands of satisfied institutions who have transformed their operations with EduFlow
+              Join thousands of satisfied institutions who have transformed their operations with OneCampus
             </p>
           </div>
 
@@ -596,7 +654,7 @@ function HomePage() {
                     </div>
                   </div>
                   <p className="text-gray-700 italic leading-relaxed">
-                    "EduFlow has revolutionized our administration process. Student management has never been easier, and our efficiency has increased by 300%!"
+                    "OneCampus has revolutionized our administration process. Student management has never been easier, and our efficiency has increased by 300%!"
                   </p>
                 </Card>
 
@@ -695,7 +753,7 @@ function HomePage() {
                 </span>
               </h2>
               <p className="text-xl mb-10 text-indigo-100 max-w-3xl mx-auto leading-relaxed">
-                Join thousands of educational institutions already using our platform to streamline operations and enhance student experiences.
+                Join thousands of educational institutions already using OneCampus to streamline operations and enhance student experiences.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Link href="/register">
@@ -705,8 +763,18 @@ function HomePage() {
                   </Button>
                 </Link>
                 <Link href="/login">
-                  <Button size="lg" variant="outline" className="bg-white text-indigo-600 hover:bg-gray-100 px-10 py-4 text-lg font-medium shadow-xl shadow-black/10 hover:shadow-2xl hover:shadow-black/20 transition-all duration-300 transform hover:scale-105">
-                    Existing User? Sign In
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="group relative overflow-hidden bg-white/90 backdrop-blur-sm text-indigo-600 hover:text-white border-2 border-white/50 hover:border-white font-semibold px-10 py-4 text-lg rounded-xl shadow-xl shadow-black/10 hover:shadow-2xl hover:shadow-white/20 transition-all duration-500 transform hover:scale-105"
+                  >
+                    <span className="absolute inset-0 bg-gradient-to-r from-white/20 to-indigo-200/30 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></span>
+                    <span className="relative z-10 flex items-center">
+                      <svg className="w-5 h-5 mr-2 transition-transform group-hover:rotate-12" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Existing User? Sign In
+                    </span>
                   </Button>
                 </Link>
               </div>
@@ -744,7 +812,7 @@ function HomePage() {
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Everything you need to know about EduFlow and how it can transform your institution
+              Everything you need to know about OneCampus and how it can transform your institution
             </p>
           </div>
 
@@ -781,7 +849,7 @@ function HomePage() {
                 </summary>
                 <div className="px-6 pb-6">
                   <p className="text-gray-600 leading-relaxed">
-                    Absolutely! EduFlow scales seamlessly from small institutions with 100 students to large universities with 50,000+ students. Our modular architecture ensures optimal performance regardless of size.
+                    Absolutely! OneCampus scales seamlessly from small institutions with 100 students to large universities with 50,000+ students. Our modular architecture ensures optimal performance regardless of size.
                   </p>
                   <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
                     <div className="flex items-center text-green-600">
@@ -808,7 +876,7 @@ function HomePage() {
                 </summary>
                 <div className="px-6 pb-6">
                   <p className="text-gray-600 leading-relaxed">
-                    Security is our top priority. EduFlow features bank-grade encryption, SOC 2 compliance, GDPR compliance, and regular security audits. Your data is stored in secure Indian data centers.
+                    Security is our top priority. OneCampus features bank-grade encryption, SOC 2 compliance, GDPR compliance, and regular security audits. Your data is stored in secure Indian data centers.
                   </p>
                   <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
                     <div className="flex items-center text-green-600">
@@ -835,7 +903,7 @@ function HomePage() {
                 </summary>
                 <div className="px-6 pb-6">
                   <p className="text-gray-600 leading-relaxed">
-                    Yes! EduFlow offers comprehensive APIs and pre-built integrations with popular systems like Moodle, Google Workspace, Microsoft 365, and various payment gateways.
+                    Yes! OneCampus offers comprehensive APIs and pre-built integrations with popular systems like Moodle, Google Workspace, Microsoft 365, and various payment gateways.
                   </p>
                   <div className="mt-4 flex items-center text-sm text-indigo-600">
                     <BookOpen className="w-4 h-4 mr-2" />
@@ -904,7 +972,7 @@ function HomePage() {
                   <div className="absolute -top-1 -right-1 w-3 h-3 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full animate-pulse"></div>
                 </div>
                 <span className="text-2xl font-bold bg-gradient-to-r from-white to-indigo-200 bg-clip-text text-transparent">
-                  EduFlow
+                  OneCampus
                 </span>
               </div>
               <p className="text-gray-300 text-lg leading-relaxed max-w-md">
@@ -937,7 +1005,7 @@ function HomePage() {
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="text-gray-400 text-sm mb-4 md:mb-0">
-                © 2024 EduFlow. All rights reserved. Built with ❤️ for education.
+                © 2024 OneCampus. All rights reserved. Built with ❤️ for education.
               </div>
               <div className="flex space-x-6 text-gray-400 text-sm">
                 <a href="#" className="hover:text-indigo-400 transition-colors duration-200">Privacy Policy</a>

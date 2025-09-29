@@ -118,7 +118,7 @@ function SidebarContent({ user, onNavigate, isCollapsed = false, onToggleCollaps
           </div>
           {(!isCollapsed || isMobile) && (
             <span className="text-lg bg-gradient-to-r from-slate-800 to-slate-600 dark:from-slate-100 dark:to-slate-300 bg-clip-text text-transparent">
-              College ERP
+              College 
             </span>
           )}
         </Link>

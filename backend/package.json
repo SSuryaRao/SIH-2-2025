@@ -13,7 +13,8 @@
     "quick-setup": "node scripts/quickSetup.js",
     "setup": "npm run quick-setup",
     "diagnose": "node scripts/diagnoseFirabase.js",
-    "create-users-direct": "node scripts/createUsersDirectly.js"
+    "create-users-direct": "node scripts/createUsersDirectly.js",
+    "keep-alive": "node scripts/keepAlive.js"
   },
   "keywords": [
     "erp",

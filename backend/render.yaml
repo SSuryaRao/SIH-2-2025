@@ -17,6 +17,28 @@ services:
           type: web
           name: frontend
           property: url
+      - key: BACKEND_URL
+        fromService:
+          type: web
+          name: college-erp-backend
+          property: url
     healthCheckPath: /api/health
+    autoDeploy: true
+    branch: main
+
+  # Cron job to keep the backend alive (pings every 14 minutes)
+  - type: cron
+    name: keep-alive
+    env: node
+    plan: free
+    buildCommand: npm install
+    schedule: "*/14 * * * *"  # Every 14 minutes
+    command: node scripts/keepAlive.js
+    envVars:
+      - key: BACKEND_URL
+        fromService:
+          type: web
+          name: college-erp-backend
+          property: url
     autoDeploy: true
     branch: main
